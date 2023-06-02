@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <html>
+        <head>
+            <title>css</title>
+            <style type="text/css">
+                body{
+                    padding-top:100px;
+                }
+                body{
+                     background: linear-gradient(
+      to right,
+      #ff5770,
+      #e4dc42,
+      #2dc4b5,
+      #9e16c3,
+      #9e62e6,
+      #9e16c3,
+      #c42da8,
+      #56e40f,
+      #ff5770
+    );
+    background-size: 150% 150%;
+    animation: animateGlow 1.50s linear infinite;
+                }
+                @keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.cssbtn:hover{
+    background-size: 200% 200%;
+    animation: animateGlow 1.50s linear infinite;
+}
+
+            </style>
+        </head>
+        <body>
+            <div>
+               <h1 style="text-align: center; color: #fff;">hello world</h1>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    ><html>
+        <head>
+            <title>marquee</title>
+        </head>
+        <body>
+            <!--here we using the marquee tag to -->
+            <marquee>this is heading</marquee>
+            <!--here we using the ancher tag inside the marquee tag-->
+            <marquee><a href="hello world">hello world</a></marquee>
+            <!--here we using the backgroung color-->
+            <marquee bgcolor="red">this text containing background color</marquee>
+            <!--here we using the behavior of the maquee tag-->
+            <marquee bihavior="altarnative" bgcolor="red">this is the altarnative text</marquee>
+            <!--here we using the behavior is scroll-->
+            <marquee behavior="Scroll" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee behavior="Slide" bgcolor="red"> this is the scolling text</marquee>
+              <!--here we using the behavior is scroll-->
+            <marquee direction="right" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee direction="left" bgcolor="red"> this is the scolling text</marquee>
+              <!--here we using the behavior is scroll-->
+            <marquee direction="top" height="300" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee direction="down" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee scrollamount="20" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee scrollamount="30" bgcolor="red"> this is the scolling text</marquee>
+             <!--here we using the behavior is scroll-->
+             <marquee scrollamount="10" bgcolor="red"> this is the scolling text</marquee>
+              <!--here we using the behavior is scroll-->
+              <marquee onmouseenter="dstop();"  onmouseleave="dstart()" bgcolor="red" id="uu"> tddddhis is the scolling text</marquee>
+               <!--here we using the behavior is scroll-->
+             <marquee scrollamount="10" bgcolor="red"> this is the scolling text</marquee>
+             <script>
+                function dstop() {
+                    let marquee  = document.getElementById("uu").stop();
+
+                }
+                function dstart() {
+                    let  marquee = document.getElementById("uu").start();
+
+                }
+             </script>
+        </body>
+    </html>

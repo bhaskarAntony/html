@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <title>css</title>
+            <style>
+                table, th, td{
+                    border:1px solid #9f1818;
+                    border-collapse: collapse;
+                    padding:20px;
+                    font-size: 25px;
+                    color:#d208d5;
+                    background-color: rgb(238, 227, 18);
+                }
+                td:hover{
+                    border-radius:10px;
+                 
+                    color: #fff;
+                    background: linear-gradient(
+      to right,
+      #ff5770,
+      #e4dc42,
+      #2dc4b5,
+      #9e16c3,
+      #9e62e6,
+      #9e16c3,
+      #c42da8,
+      #56e40f,
+      #ff5770
+    );
+    background-size: 150% 150%;
+    animation: animateGlow 1.50s linear infinite;
+    transform:scale(1.5);
+                }
+                @keyframes animateGlow {
+  0% {
+    background-position: 50% 50%;
+    
+  
+  }
+  50% {
+    background-position: 100% 50%;
+ 
+   
+  }
+  100% {
+    background-position: 200% 50%;
+    
+  }
+}
+                
+                
+            </style>
+        </head>
+        <body>
+            <table>
+                <!--here we can add heading if the table-->
+                <caption><h1>parts details</h1></caption>
+                <!--here we can add the table row with table head-->
+                <tr>
+                    <th>SI NO  </th>
+                    <th>PART NAME  </th>
+                    <th>SAP CODE  </th>
+                </tr>
+                <!--here we can create the table  row with the data-->
+                
+                <tr>
+                    <td>1</td>
+                    <td>K0N Fender Front</td>
+                    <td>s106863401</td>
+                </tr>
+                <tr>
+                     <!--here we can create the table  row with the data-->
+                    <td>2</td>
+                    <td>k0y cover handle</td>
+                    <td>s10686301</td>
+                </tr>
+                <tr>
+                     <!--here we can create the table  row with the data-->
+                    <td>3</td>
+                    <td>k1k cover handle</td>
+                    <td>s10603601</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>k0n cowl front</td>
+                    <td>s10603501</td>
+                </tr>
+            </table>
+        </body>
+    </html>

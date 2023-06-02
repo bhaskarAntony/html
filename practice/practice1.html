@@ -1,0 +1,213 @@
+<!doctype html>
+<html lan="en">
+        <head>
+            <title>
+                navigation
+            </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style type="text/css">
+                * {
+                    box-sizing: border-box;
+                  }
+                body{
+                    background-color: rgb(178, 175, 175);
+                    margin:0px;
+                    padding:0px;
+                    font-family: roboto, 'Segoe UI', Tahoma, sans-serif;
+                }
+                .navigation{
+                    height: 100%;
+                    width:0%;
+                    background-color: rgb(6, 6, 5);
+                    color: #fff;
+                    overflow: hidden;
+                    position:fixed;
+                    z-index: 1;
+                    top:0;
+                    left:0;
+                    padding-top:60px;
+                    transition:0.5s;
+                    position: fixed;
+
+                }
+                .navigation a {
+                    font-size:25px;
+                    color: #fff;
+                    text-decoration: none;
+                    display:block;
+                    margin-left:0px;
+                    padding:10px;
+                    margin:10px;
+                 
+                }
+                .navigation .closebtn{
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                    margin-bottom: 20px;
+                    padding-bottom:40px;
+                    transition:0.7s;
+                    
+                }
+                .navigation a:hover {
+                    background-color: #f0e800fa;
+                    color: #000;
+                    border-radius:10px;
+                }
+                
+                @media screen and (max-height: 450px) {
+                .navigation {padding-top: 15px;}
+                .navigation a {font-size: 18px;}
+               }
+
+               .titleContainer{
+                float: top;
+                height:fit-content;
+                padding:10px;
+                font-size:30px;
+                background-color: #000;
+                color: #fff;
+                
+               }
+               .user{
+                float: right;
+                color:#ffff00;
+                padding:5px;
+                padding-bottom:5px;
+                border-radius:50px;
+                width: 30px;
+                height:30px;
+                text-align: center;
+               }
+               .user:hover{
+                opacity:0.6;
+                transition:0.7s;
+               }
+               .Search {
+                float: right;
+                width:30px; 
+                height:30px; 
+                padding:5px; 
+                margin-right:30px;
+                cursor:pointer;
+               }
+               .Search:hover{
+                opacity:0.6;
+                transition:0.7s;
+               }
+               .left{
+                background-color:rgb(220, 225, 226);
+                padding:10px;
+                float:left;
+                width:25%;
+
+               }
+               
+               .middle{
+                background-color:rgb(220, 225, 226);
+                padding:10px;
+                float:left;
+                width:50%;
+               }
+               .right{
+                background-color:rgb(220, 225, 226);
+                padding:10px;
+                float:left;
+                width:25%;
+               }
+               @media screen and (max-width: 800px) {
+                  .left, .middle {
+                  width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+                   }
+                   .right {
+                  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+                   }
+                  }
+
+               @media screen and (max-width: 600px) {
+              .left, .middle, .right {
+                  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+                   }
+                  }
+                  .main{
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+
+            </style>
+        </head>
+        <body>
+            <img src="assets/imagews/image4.jpg">
+                <div  id="Nav" class="navigation">
+                <label style="font-size:30px; cursor:pointer" class="closebtn" onclick="closeNav()">&times;</label>
+                <hr> 
+                <a href="#ff"><i class="fa fa-home"> </i>  Home </a>
+                 <a href="#home"><i class="fa fa-search"> </i>  Students ratings</a>
+                 <a href="#home"><i class="fa fa-book"> </i>  Courses</a>
+                 <a href="#home"><i class="fa fa-map"> </i>  About Us</a>
+                 <a href="#home"><i class="fa fa-user"> </i>   Contact Us</a>
+            </div>
+        <div class="titleContainer">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#2979;</span>
+            <label> Quicker</label>
+            <label class="user"><i class="fa fa-user"> </i></label>
+            <label class="Search"><i class="fa fa-search"></i></label>
+        </div>
+    <div style="height: fit-content;">
+        <div class="left">
+            <h1> What is The Viewport?</h1>
+            <p> The viewport is the user's visible area of a web page.
+
+                The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+                
+                Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+                
+                Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+                
+                This was not perfect!! But a quick fix.</p>
+        </div>
+        <div class="middle">
+            <h1>Size Content to The Viewport</h1>
+            <p>1. Do NOT use large fixed width elements - For example, if an image is displayed at a width wider than the viewport it can cause the viewport to scroll horizontally. Remember to adjust this content to fit within the width of the viewport.
+
+                2. Do NOT let the content rely on a particular viewport width to render well - Since screen dimensions and width in CSS pixels vary widely between devices, content should not rely on a particular viewport width to render well.
+                
+                3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.
+                
+                </p>
+        </div>
+       
+        <div class="right">
+            <h1>Setting The Viewport</h1>
+            
+            <p>The viewport is the user's visible area of a web page.
+
+                The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+                
+                Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+                
+                Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+                
+                This was not perfect!! But a quick fix.</p>
+        </div>
+    </div>
+</div>
+    <hr>
+    <div class="container">
+       <h1>hello world</h1>
+    </div>
+            <script>
+                function openNav(){
+                    document.getElementById("Nav").style.width="300px"
+                }
+                function closeNav(){
+                    document.getElementById("Nav").style.width="0px"
+                }
+            </script>
+
+        </body>
+    </html>
